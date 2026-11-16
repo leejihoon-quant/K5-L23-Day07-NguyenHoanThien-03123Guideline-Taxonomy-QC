@@ -132,18 +132,3 @@ Nếu chỉ nhìn ảnh mà người gán không chắc chắn → không ép nh
 | v0.1 | Thêm R-01…R-17, ngưỡng `occluded_level`, quy tắc `truncated`, bảng ca khó | Xe chở xe (img_002), người đi xe máy (img_005, 006, 026), tượng và vật giả (img_017, 027, 028, 033, 038), vật ngoài taxonomy (img_004, 016, 023, 035) |
 
 ---
-
-## Danh sách tự đối chiếu (so với guideline của bạn)
-
-1. Người đi xe máy: bạn vẽ mấy box, phần nào vào box nào? (bản tham khảo: 1 box `motorcycle` + 1 box `person` mỗi người, chồng nhau)
-2. Xe chở xe (img_002): 1 box hay nhiều box?
-3. Tượng, ma-nơ-canh, ảnh in, phản chiếu, đồ chơi: không box hay có box? (nên **không** box; ghi rõ là mẫu âm)
-4. Xe bán tải: `truck` hay `car`? Bạn có nêu căn cứ không?
-5. Tuk-tuk, xích lô, xe buýt, xe đạp: bạn xử lý thế nào, và có nói rõ người ngồi/lái thì sao?
-6. Ngưỡng `occluded_level`: bạn có **con số %** cho từng mức chưa?
-7. `truncated`: định nghĩa có phân biệt với "bị vật khác che" không?
-8. Vật nhỏ: bạn dùng ngưỡng 20 px của `rules` chưa, đo bằng gì?
-9. Đám đông: có tiêu chí **đo được** để quyết định vẽ riêng hay phủ `ignore_region` không?
-10. Mờ nhòe, ban đêm, phản chiếu mặt đường ướt?
-11. Hàng hóa nhô ra, vật mang theo: có nằm trong box vật mang không?
-12. Bạn có dẫn ID ảnh (`img_0xx`) cho từng ca không? (chiếm 6/15 điểm mục 1 của rubric)
